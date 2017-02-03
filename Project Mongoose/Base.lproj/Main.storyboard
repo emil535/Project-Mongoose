@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Simple View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SimpleViewController" customModule="Project_Mongoose" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="GSX-13-aCp" userLabel="Stack View Button">
+                                <rect key="frame" x="137" y="430" width="100" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cn2-9e-uFN">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.1665541053" blue="0.17158008420000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Th1-8s-2SK"/>
+                                        </constraints>
+                                        <state key="normal" title="dog">
+                                            <color key="titleColor" red="0.139765625" green="0.048139350140000002" blue="0.084043896019999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pickCritter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1qr-NL-WHY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hY2-E4-65R">
+                                        <rect key="frame" x="0.0" y="60" width="100" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.1665541053" blue="0.17158008420000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="qAe-bb-lRc"/>
+                                        </constraints>
+                                        <state key="normal" title="cat">
+                                            <color key="titleColor" red="0.139765625" green="0.048139350140000002" blue="0.084043896019999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pickCritter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xLC-FP-3ys"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcp-dv-DJk">
+                                        <rect key="frame" x="0.0" y="120" width="100" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.1665541053" blue="0.17158008420000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="FcC-sc-jqa"/>
+                                        </constraints>
+                                        <state key="normal" title="mongoose">
+                                            <color key="titleColor" red="0.139765625" green="0.048139350140000002" blue="0.084043896019999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pickCritter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kds-dD-Cop"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6Oz-m9-luq">
+                                <rect key="frame" x="67.5" y="40" width="240" height="290"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="z8O-J8-uQ6">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="rim-FG-SXk"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="240" id="tqL-6v-kWv"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unknown Critter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHO-E1-TLA">
+                                        <rect key="frame" x="0.0" y="260" width="240" height="30"/>
+                                        <color key="backgroundColor" red="0.74352904040000001" green="0.45415277430000001" blue="0.36360165799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="vf2-pq-QRh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Oz-m9-luq" firstAttribute="leading" secondItem="GSX-13-aCp" secondAttribute="trailing" constant="140" id="2kP-Ng-oLh"/>
+                            <constraint firstItem="GSX-13-aCp" firstAttribute="top" secondItem="6Oz-m9-luq" secondAttribute="bottom" constant="100" id="31f-bW-NCM"/>
+                            <constraint firstItem="GSX-13-aCp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6OF-Bt-VMl"/>
+                            <constraint firstItem="GSX-13-aCp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AYQ-za-0Sg"/>
+                            <constraint firstItem="6Oz-m9-luq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="LWH-mj-ic4"/>
+                            <constraint firstItem="6Oz-m9-luq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n0F-4b-1fW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Oz-m9-luq" secondAttribute="trailing" constant="30" id="wCs-ax-SA3"/>
+                            <constraint firstItem="6Oz-m9-luq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zFE-CI-zfG"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="31f-bW-NCM"/>
+                                <exclude reference="6OF-Bt-VMl"/>
+                                <exclude reference="AYQ-za-0Sg"/>
+                                <exclude reference="2kP-Ng-oLh"/>
+                                <exclude reference="LWH-mj-ic4"/>
+                                <exclude reference="n0F-4b-1fW"/>
+                                <exclude reference="wCs-ax-SA3"/>
+                                <exclude reference="zFE-CI-zfG"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="AYQ-za-0Sg"/>
+                                <include reference="2kP-Ng-oLh"/>
+                                <include reference="wCs-ax-SA3"/>
+                                <include reference="zFE-CI-zfG"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="31f-bW-NCM"/>
+                                <include reference="6OF-Bt-VMl"/>
+                                <include reference="LWH-mj-ic4"/>
+                                <include reference="n0F-4b-1fW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="critterNameLabel" destination="GHO-E1-TLA" id="pHp-bc-4f7"/>
+                        <outlet property="photo" destination="z8O-J8-uQ6" id="2BT-VY-7MF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122.40000000000001" y="120.98950524737631"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat" width="4180" height="2991"/>
+    </resources>
+</document>
