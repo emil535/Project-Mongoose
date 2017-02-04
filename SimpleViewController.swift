@@ -31,7 +31,7 @@ class SimpleViewController: UIViewController {
         
         // Put the Mongoose in round frame
         if critterImage!.size.width == critterImage!.size.height {
-            self.photo.layer.cornerRadius = self.photo.frame.width * 0.5
+            self.photo.layer.cornerRadius = self.photo.frame.width * 0.6
             self.photo.layer.masksToBounds = true
             self.photo.layer.borderWidth = 5
             self.photo.layer.borderColor = UIColor.darkGray.cgColor
