@@ -26,17 +26,7 @@ class SimpleViewController: UIViewController {
         let critterImage: UIImage? = UIImage(named: critter)
         critterNameLabel.text = critter
         photo.image = critterImage
-        photo.layer.masksToBounds = false
-        photo.layer.borderWidth = 0
-        
-        // Put the Mongoose in round frame
-        if critterImage!.size.width == critterImage!.size.height {
-            self.photo.layer.cornerRadius = self.photo.frame.width * 0.6
-            self.photo.layer.masksToBounds = true
-            self.photo.layer.borderWidth = 5
-            self.photo.layer.borderColor = UIColor.darkGray.cgColor
-        }
-        
+
     }
 }
 
